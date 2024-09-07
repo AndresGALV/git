@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>for Sharon</title>
+    <title>Página con Fondo</title>
+    <style>
+        /* Estilos para el fondo de la página */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('img/onepiece_w2.jpg'); /* Reemplaza con la URL de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos del contenedor */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+            padding: 20px 20px 0 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 700px; /* Ancho máximo del contenedor */
+            width: 100%; /* El contenedor ocupará el 100% del espacio disponible */
+            margin: 0 auto; /* Centrando el contenedor */
+        }
+
+        /* Estilos del texto */
+        .text {
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        /* Estilos de la imagen */
+        .image {
+            margin-right: 20px;
+            width: 250px; /* Puedes ajustar el tamaño de la imagen */
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .text {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .image {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hola</h1>
+    <div class="container">
+        <h2 class="text">Sharon</h2>
+        <p>Sé que ya te lo mencioné en mensaje, pero quiero decirlo de nuevo... En verdad eres una gran mujer, nunca te olvidaré, dejaste algo muy importante en mí. Esto que hago y expreso seguramente sea muy poco para lo que realmente mereces, lastimosamente no puedo hacer un CTRL + Z para deshacer lo que hice mal, pero si puedo corregirlo y hacer mejor las cosas. Me gustaría algún día poder corregir mis errores así las cosas no puedan ser como antes. Sin más que decir, repito, eres una mujer grandiosa, lamento valorar eso de ti tan tarde, pero bueno, aún así siempre te recordaré con mucho cariño. Seguramente a medida que siga avanzando te piense así como hoy y recordaré que parte de mi avance es gracias a ti. ❤️</p>
+        <img class="image" src="img/sharon.png" alt="Sharon"> <!-- Reemplaza con la URL de tu imagen -->
+    </div>
 </body>
 </html>
